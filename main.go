@@ -11,7 +11,7 @@ import (
 )
 
 func sha512hash(value string) string {
-	h := sha512.Sum512([]byte(ssn))
+	h := sha512.Sum512([]byte(value))
 	return base64.StdEncoding.EncodeToString(h[:])
 }
 
